@@ -1,15 +1,22 @@
-# Library Management System
+# Library Management System Project Setup
 Library Management System developed in Spring Boot, JPA, Hibernate, MySQL HTML, CSS, JavaScript.
 
 #### What does it offer?
 It allows user to manage Members, Categories, Books and Issueing Books.
 
 ### Setup project
-#### Setup database and run the project
- - Project requires MySql database. Use Xampp
- - Create a database and name it "sparklmsdb".
- - Run the backend from SparkLmsApplication class.
- - After running the backend just hit http://localhost:8080 to access the software.
+#### Prerequisites
+* Oracle VirtualBox
+* Vagrant
+* Vagrant plugins
+    * `vagrant plugin install vagrant-hostmanager`
+    * `vagrant plugin install vagrant-vbguest`
+#### VM Setup
+1. Clone source code.
+2. cd into the repository.
+3. Switch to the manual-deployment branch.
+4. cd into vagrant directory.
+5. Bring up vm: $ ```vagrant up```
 
 ### Login
 for login you may use username as 'admin' and password as 'admin'.
