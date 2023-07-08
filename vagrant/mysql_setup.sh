@@ -1,9 +1,9 @@
 #!/bin/bash
 DATABASE_PASS='adm1n234'
 
-yum install epel-release -y
+dnf install epel-release -y
 # Mysql
-yum install mariadb-server -y
+dnf install mariadb-server -y
 #mysql_secure_installation
 sed -i 's/^127.0.0.1/0.0.0.0/' /etc/my.cnf
 # starting & enabling mariadb-server
