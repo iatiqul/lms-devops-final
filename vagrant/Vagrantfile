@@ -1,0 +1,13 @@
+Vagrant.configure("2") do |config|
+    config.hostmanager.enabled = true 
+    config.hostmanager.manage_host = true
+    
+  ### DB vm  ####
+    config.vm.define "manual-deployment-server" do |server|
+      server.vm.box = "CrunchyData/alma9"
+      server.vm.hostname = "md-server"
+      server.vm.network "private_network", ip: "192.168.56.15"
+      server.vm.provision "shell", path: "mysql_setupo.sh"  
+      server.vm.provision "shell", path: "webapp_setupo.sh"
+    end
+end
