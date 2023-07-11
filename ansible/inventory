@@ -1,0 +1,6 @@
+[ansible-controller]
+ansible-controller.localdomain
+[k8s-master]
+master.local
+[k8s-worker]
+worker.local
