@@ -42,7 +42,7 @@ data:
   MYSQL_PASSWORD: cm9vdA==
   MYSQL_ROOT_PASSWORD: cm9vdA==
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql-deployment
