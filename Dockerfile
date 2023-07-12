@@ -1,5 +1,4 @@
-FROM adoptopenjdk/openjdk11:alpine-jre
-FROM maven:3.6.3
+FROM adoptopenjdk/maven-openjdk11
 LABEL MAINTAINER="atiqul.islam@bjitacademy.com"
 
 # Copy the application source code to the container
