@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-container
-          image: iatiqul/spark-lms:1
+          image: iatiqul/spark-lms:1.0
           ports:
             - containerPort: 8090
 ---
