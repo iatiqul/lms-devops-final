@@ -10,5 +10,7 @@ WORKDIR /app
 # Build your application
 RUN mvn clean install
 
+EXPOSE 8090
+
 # Specify the default command to run when the container starts
 CMD ["mvn", "spring-boot:run"]
