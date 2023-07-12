@@ -1,3 +1,4 @@
+FROM adoptopenjdk/openjdk11:alpine-jre
 FROM maven:3.6.3
 LABEL MAINTAINER="atiqul.islam@bjitacademy.com"
 
